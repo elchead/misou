@@ -1,0 +1,21 @@
+{
+  "name": "pocket-full-text",
+  "version": "1.0.0",
+  "description": "Download and parse full text versions of articles for the Pocket module using mozilla/readability.js",
+  "main": "index.js",
+  "author": "Linus Lee <linus@thesephist.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha './{,!(node_modules)/**/}*.test.js'"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.4.1",
+    "csv-to-js-parser": "^2.3.3",
+    "jsdom": "^16.6.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
+  }
+}

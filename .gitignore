@@ -1,0 +1,11 @@
+secrets/*
+.DS_Store
+data
+build/
+static
+vendora
+*.plist
+appconfig.json
+source/instapaper-full-text/node_modules
+source/instapaper-full-text/tmp
+search/misou.bleve

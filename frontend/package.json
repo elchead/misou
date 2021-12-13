@@ -1,0 +1,58 @@
+{
+  "name": "gerstler",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.3.0",
+    "@reduxjs/toolkit": "^1.6.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.20.26",
+    "@types/react": "^16.14.15",
+    "@types/react-dom": "^16.9.14",
+    "@types/react-redux": "^7.1.18",
+    "@wailsapp/runtime": "^1.1.1",
+    "axios": "^0.21.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-fontawesome": "^1.7.1",
+    "react-icons": "^4.2.0",
+    "react-keybind": "^0.9.4",
+    "react-redux": "^7.2.5",
+    "react-scripts": "4.0.3",
+    "typescript": "~4.1.5",
+    "use-debounce": "^7.0.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build && npm run build-dist",
+    "build-dist": "cp -v /Users/adria/Programming/misou/frontend/build/static/css/main*.css /Users/adria/Programming/misou/frontend/build/static/css/main.css && cp -v /Users/adria/Programming/misou/frontend/build/static/js/main*.js /Users/adria/Programming/misou/frontend/build/static/js/main.js",
+    "test": "craco test",
+    "eject": "craco eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/ws": "^7.4.7",
+    "autoprefixer": "^9.8.6",
+    "jest-websocket-mock": "^2.2.1",
+    "mock-socket": "^9.0.5",
+    "postcss": "^7.0.36",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.14"
+  }
+}
