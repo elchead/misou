@@ -11,7 +11,7 @@ import (
 	"github.com/elchead/misou/search"
 )
 
-var cfgPath string
+var cfgPath string = "/Users/adria/Programming/misou/appconfig.json"
 
 func SearchUsingIndexer(searcher search.SearcherI,query string) string {
 	res, err := searcher.Search(query)

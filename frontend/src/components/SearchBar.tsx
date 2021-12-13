@@ -13,7 +13,6 @@ import { useAppDispatch, useAppSelector } from "../app/hooks";
 import { setLoading } from "../features/loadingSlice";
 import { loadResults, clearQuery, updateQuery } from "../features/querySlice";
 
-import { APIContext, sendQuery } from "../services/API";
 import { IShortcutProviderRenderProps } from "react-keybind";
 import { clearResults } from "../features/resultsSlice";
 

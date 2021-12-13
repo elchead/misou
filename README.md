@@ -67,6 +67,11 @@ Words of caution: The installation is suited to my setup and has not been tested
     make index
     ```
 
+### Development
+
+Use `make dev` to build the backend and exposes it through a websocket and `make dev-front` for the development frontend server.
+Note that for `make dev` it is necessary to set `cfgPath` inside the source file `integration.go`, since it is not possible to inject the path as in `build`!
+
 ## Sources
 
 using external API (slow ~500ms):

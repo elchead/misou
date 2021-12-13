@@ -1,6 +1,5 @@
 import React from "react";
 import { render, RenderOptions } from "@testing-library/react";
-import { createAPIClient, APIProvider } from "../services/API";
 import { store } from "../app/store";
 import { Provider } from "react-redux";
 import axios, { AxiosInstance } from "axios";
@@ -8,9 +7,7 @@ import axios, { AxiosInstance } from "axios";
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
   return (
     <React.StrictMode>
-      <Provider store={store}>
-        <APIProvider api={createAPIClient()}>{children}</APIProvider>
-      </Provider>
+      <Provider store={store}></Provider>
     </React.StrictMode>
   );
 };
