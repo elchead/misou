@@ -21,17 +21,47 @@ Words of caution: The installation is suited to my setup and has not been tested
     brew install ripgrep-all jq
     ```
 
-1.  Configure paths inside `appconfig.json` and move to desired directory
-2.  Export config path:
+1.  Create `appconfig.json` and fill fields that apply:
+
+    ```json
+    {
+      "repoPath": "",
+      "readwiseCsvPath": "",
+      "instapaperPath": "",
+      "peoplePath": "",
+      "peopleUrl": "",
+      "twitterPath": "",
+      "fileScrapeRgaPath": "/Users/name/homebrew/bin/rga",
+      "fileScrapePath": "",
+      "secretsSubPath": "/secrets",
+      "historyBashSubPath": "/source/history.sh",
+      "bookmarkBashSubPath": "/source/bookmarks.sh",
+      "sources": {
+        "bookmarks": true,
+        "history": true,
+        "localfiles": true,
+        "gdrive": false,
+        "instapaper": true,
+        "readwise": true,
+        "people": false,
+        "twitter": true
+      }
+    }
+    ```
+
+    `gdrive` and `people` are not supported by me :)
+
+2.  Move `appconfig.json` to desired directory
+3.  Export config path:
     ```
     export misouCfg=/Users/adria/Programming/misou/appconfig.json
     ```
-3.  Build app:
+4.  Build app:
     ```
     make build
     ```
     Note that the config location is injected during build time and cannot be changed afterwards!
-4.  Generate search index (if local sources are used, see [Sources](#sources))
+5.  Generate search index (if local sources are used, see [Sources](#sources))
 
     ```
     make index
